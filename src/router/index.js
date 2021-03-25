@@ -17,10 +17,56 @@ const routes = [
         },
     },
     {
+        path: "/services",
+        name: "Services",
+        components: {
+            header: () =>
+                import(
+                    /* webpackChunkName: "header" */ "@/components/AppHeader.vue"
+                ),
+            default: () =>
+                import(
+                    /* webpackChunkName: "services" */ "@/views/Services.vue"
+                ),
+        },
+    },
+    {
+        path: "/stones",
+        name: "Stones",
+        components: {
+            header: () =>
+                import(
+                    /* webpackChunkName: "header" */ "@/components/AppHeader.vue"
+                ),
+            default: () =>
+                import(/* webpackChunkName: "stones" */ "@/views/Stones.vue"),
+        },
+    },
+    {
+        path: "/why-pick-us",
+        name: "WhyPickUs",
+        components: {
+            header: () =>
+                import(
+                    /* webpackChunkName: "header" */ "@/components/AppHeader.vue"
+                ),
+            default: () =>
+                import(
+                    /* webpackChunkName: "whyPickUs" */ "@/views/WhyPickUs.vue"
+                ),
+        },
+    },
+    {
         path: "/about",
         name: "About",
-        component: () =>
-            import(/* webpackChunkName: "about" */ "@/views/About.vue"),
+        components: {
+            header: () =>
+                import(
+                    /* webpackChunkName: "header" */ "@/components/AppHeader.vue"
+                ),
+            default: () =>
+                import(/* webpackChunkName: "about" */ "@/views/About.vue"),
+        },
     },
 ];
 

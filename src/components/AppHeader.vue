@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <nav class="app-navbar">
+        <nav>
             <ul class="b-list">
                 <li
                     v-for="link in navLinks"
@@ -22,9 +22,10 @@
                 >
                     <router-link
                         class="b-list-item-link"
+                        active-class="b-list-item-link--active"
                         :to="link.to"
                         v-text="link.title"
-                        active-class="bg-black"
+                        exact
                     ></router-link>
                 </li>
             </ul>
@@ -42,7 +43,7 @@ export default {
             { title: "Ծառայություններ", to: "/services" },
             { title: "Քարեր", to: "/stones" },
             { title: "Ինչու Մենք", to: "/why-pick-us" },
-            { title: "Մեր Մասին", to: "/about-us" },
+            { title: "Մեր Մասին", to: "/about" },
         ],
     }),
 };
@@ -105,11 +106,12 @@ export default {
     padding: 36px 16px;
 }
 
-.b-list-item-link:hover {
+.b-list-item-link--active {
     background-color: black;
+    border: 1px solid white;
 }
 
-.bg-black {
+.b-list-item-link:hover {
     background-color: black;
 }
 </style>

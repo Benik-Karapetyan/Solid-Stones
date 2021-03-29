@@ -14,6 +14,10 @@ const routes = [
                 ),
             default: () =>
                 import(/* webpackChunkName: "home" */ "@/views/Home.vue"),
+            footer: () =>
+                import(
+                    /* webpackChunkName: "footer" */ "@/components/AppFooter.vue"
+                ),
         },
     },
     {
@@ -28,6 +32,10 @@ const routes = [
                 import(
                     /* webpackChunkName: "services" */ "@/views/Services.vue"
                 ),
+            footer: () =>
+                import(
+                    /* webpackChunkName: "footer" */ "@/components/AppFooter.vue"
+                ),
         },
     },
     {
@@ -40,6 +48,10 @@ const routes = [
                 ),
             default: () =>
                 import(/* webpackChunkName: "stones" */ "@/views/Stones.vue"),
+            footer: () =>
+                import(
+                    /* webpackChunkName: "footer" */ "@/components/AppFooter.vue"
+                ),
         },
     },
     {
@@ -54,6 +66,10 @@ const routes = [
                 import(
                     /* webpackChunkName: "whyPickUs" */ "@/views/WhyPickUs.vue"
                 ),
+            footer: () =>
+                import(
+                    /* webpackChunkName: "footer" */ "@/components/AppFooter.vue"
+                ),
         },
     },
     {
@@ -66,6 +82,10 @@ const routes = [
                 ),
             default: () =>
                 import(/* webpackChunkName: "about" */ "@/views/About.vue"),
+            footer: () =>
+                import(
+                    /* webpackChunkName: "footer" */ "@/components/AppFooter.vue"
+                ),
         },
     },
 ];

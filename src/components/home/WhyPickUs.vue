@@ -108,7 +108,7 @@
         <img
             src="@/assets/whyPickUs/19.jpg"
             alt="half ready man statue"
-            style="width: 100%; height: 80vh; vertical-align: middle"
+            style="width: 100%; height: 70vh; vertical-align: middle"
         />
 
         <div class="logo-container">
@@ -179,7 +179,6 @@ export default {
     position: absolute;
     top: 160px;
     left: 250px;
-    object-fit: cover;
 }
 
 .floating-right {

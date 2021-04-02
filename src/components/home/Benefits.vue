@@ -69,7 +69,7 @@ export default {
 .mastery-container {
     background: url("../../assets/mastery.jpg") no-repeat;
     background-size: cover;
-    height: 140vh;
+    height: 85vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;

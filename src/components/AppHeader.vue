@@ -1,13 +1,13 @@
 <template>
     <header class="app-header">
         <nav class="app-navbar">
-            <div class="app-title">
+            <router-link to="/">
                 <img
                     src="@/assets/main-logo.png"
                     alt="website logo"
                     class="header-logo"
                 />
-            </div>
+            </router-link>
 
             <ul class="b-list">
                 <li
@@ -70,9 +70,9 @@ export default {
 
 <style scoped>
 .app-header {
-    background: url("../assets/angel-cutted.jpg") no-repeat;
+    background: url("../assets/angel.jpg") no-repeat;
     background-size: cover;
-    height: 75vh;
+    height: 100vh;
 }
 
 .app-navbar {
@@ -83,14 +83,11 @@ export default {
     padding: 0 150px;
 }
 
-.app-title {
-    display: flex;
-    align-items: center;
-}
-
 .header-logo {
+    cursor: pointer;
     width: 270px;
     height: auto;
+    vertical-align: middle;
 }
 
 .b-list {
@@ -119,7 +116,7 @@ export default {
 }
 
 .banner-container {
-    height: calc(75vh - 97.45px);
+    height: calc(100vh - 97.45px);
     padding: 0 150px;
     display: flex;
     justify-content: flex-end;

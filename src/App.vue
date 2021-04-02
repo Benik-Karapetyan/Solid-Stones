@@ -17,6 +17,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: "Braind Yerevan";
+    src: url("./assets/fonts/BraindYerevan.otf");
+}
+
 * {
     box-sizing: border-box;
 }

@@ -14,17 +14,17 @@
                 <img
                     src="@/assets/gallery/4.jpg"
                     alt="xachqar"
-                    style="width: 100%; height: 211px; object-fit: cover; margin-bottom: 28px; vertical-align: middle"
+                    style="width: 100%; height: 201px; object-fit: cover; margin-bottom: 28px; vertical-align: middle"
                 />
                 <img
                     src="@/assets/gallery/5.jpg"
                     alt="xachqar"
-                    style="width: 50%; height: 211px; object-fit: cover; vertical-align: middle; padding-right: 14px"
+                    style="width: 50%; height: 201px; object-fit: cover; vertical-align: middle; padding-right: 14px"
                 />
                 <img
                     src="@/assets/gallery/6.jpg"
                     alt="xachqar"
-                    style="width: 50%; height: 211px; object-fit: cover; vertical-align: middle; padding-left: 14px"
+                    style="width: 50%; height: 201px; object-fit: cover; vertical-align: middle; padding-left: 14px"
                 />
             </div>
 

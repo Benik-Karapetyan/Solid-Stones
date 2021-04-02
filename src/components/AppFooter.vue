@@ -1,9 +1,9 @@
 <template>
     <footer class="app-footer">
         <img
-            src="@/assets/main-logo-footer.jpg"
+            src="@/assets/main-logo-footer.png"
             alt="website logo"
-            style="width: 300px; height: auto; display: block; margin: 0 auto 40px;"
+            style="width: 170px; height: auto; display: block; margin: 0 auto 40px;"
         />
 
         <router-link

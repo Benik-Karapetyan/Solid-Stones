@@ -12,7 +12,9 @@
 export default {
     name: "App",
 
-    data: () => ({}),
+    data: () => ({
+        isMobile: false,
+    }),
 };
 </script>
 
@@ -20,6 +22,11 @@ export default {
 @font-face {
     font-family: "Braind Yerevan";
     src: url("./assets/fonts/BraindYerevan.otf");
+}
+
+@font-face {
+    font-family: "DejaVuSans";
+    src: url("./assets/fonts/DejaVuSans.ttf");
 }
 
 * {
@@ -42,8 +49,21 @@ body {
 }
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: DejaVu Sans, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.b-image {
+    display: block;
+    object-fit: cover;
 }
 </style>

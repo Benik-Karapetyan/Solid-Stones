@@ -1,15 +1,25 @@
 <template>
-    <section class="benefits">
-        <div class="mastery-container">
-            <h1 class="mastery-title">CREATE FROM NOTHING</h1>
-            <div class="underline"></div>
+    <section class="benefits-container">
+        <div class="pos-relative">
+            <div class="mastery-title-holder">
+                <h1 class="mastery-title">CREATE FROM NOTHING</h1>
+                <div class="underline"></div>
+            </div>
+            <v-img
+                src="@/assets/mastery.jpg"
+                width="100%"
+                height="auto"
+                max-height="85vh"
+            ></v-img>
         </div>
 
-        <v-row no-gutters style="padding: 50px 75px">
+        <v-row no-gutters class="benefits-wrapper">
             <v-col
                 v-for="benefit in benefits"
                 :key="benefit.title"
-                cols="3"
+                cols="12"
+                sm="6"
+                md="3"
                 class="text-center"
             >
                 <img
@@ -61,40 +71,39 @@ export default {
 </script>
 
 <style scoped>
-.benefits {
+.benefits-container {
     background-color: rgb(30, 30, 30);
     color: white;
 }
 
-.mastery-container {
-    background: url("../../assets/mastery.jpg") no-repeat;
-    background-size: cover;
-    height: 85vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+.mastery-title-holder {
+    padding: 48px;
+    z-index: 1000;
 }
 
 .mastery-title {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.9rem;
-    flex-basis: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .underline {
-    border-top: 4px solid white;
+    border-top: 3px solid white;
     width: 100px;
-    margin-top: 20px;
+    margin: auto;
+}
+
+.benefits-wrapper {
+    padding: 20px 24px 50px;
 }
 
 .benefit-image {
     width: 50px;
     height: 50px;
     vertical-align: middle;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .benefit-title {
@@ -107,7 +116,53 @@ export default {
 
 .benefit-text {
     font-size: 13px;
-    margin: 0;
-    padding: 0 70px;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+    .benefit-text {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .benefits-wrapper {
+        padding: 20px 0px 50px;
+    }
+
+    .mastery-title-holder {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mastery-title {
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .underline {
+        border-top: 4px solid white;
+    }
+
+    .benefit-text {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1264px) {
+    .benefits-wrapper {
+        padding: 20px 75px 50px;
+    }
+
+    .benefit-text {
+        max-width: 50%;
+    }
 }
 </style>

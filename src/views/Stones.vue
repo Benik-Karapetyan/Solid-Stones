@@ -1,6 +1,11 @@
 <template>
-    <div style="padding-top: 92.4px">
-        <h1>Stones Page</h1>
+    <div>
+        <v-img
+            src="@/assets/angel.jpg"
+            width="100%"
+            height="auto"
+            max-height="100vh"
+        ></v-img>
     </div>
 </template>
 

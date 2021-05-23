@@ -1,6 +1,6 @@
 <template>
-    <section class="about">
-        <h1 class="title">
+    <section class="about-container">
+        <h1 class="about-title">
             ՄԵՐ ՄԱՍԻՆ
         </h1>
 
@@ -22,11 +22,11 @@ export default {
 </script>
 
 <style scoped>
-.about {
-    padding: 100px;
+.about-container {
+    padding: 48px 24px;
 }
 
-.title {
+.about-title {
     text-align: center;
     font-family: Braind Yerevan !important;
     font-size: 2.2rem !important;
@@ -34,9 +34,36 @@ export default {
 }
 
 .about-text {
-    max-width: 70%;
     margin: 40px auto 0;
     text-align: center;
     line-height: 1.9;
+}
+
+@media screen and (min-width: 600px) {
+    .about-container {
+        padding: 48px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .about-container {
+        padding: 100px;
+    }
+
+    .about-text {
+        max-width: 90%;
+        margin: 40px auto 0;
+        text-align: center;
+        line-height: 1.9;
+    }
+}
+
+@media screen and (min-width: 1264px) {
+    .about-text {
+        max-width: 70%;
+        margin: 40px auto 0;
+        text-align: center;
+        line-height: 1.9;
+    }
 }
 </style>

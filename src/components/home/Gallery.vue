@@ -1,64 +1,74 @@
 <template>
-    <section class="gallery">
+    <section class="gallery-container">
         <h1 class="gallery-title">ՊԱՏԿԵՐԱՍՐԱՀ</h1>
-        <div class="images-container">
-            <div style="flex: 0 0 50%; padding-right: 14px">
-                <img
-                    src="@/assets/gallery/3.jpg"
-                    alt="xachqar"
-                    style="width: 100%; height: 430px; object-fit: cover; vertical-align: middle"
-                />
-            </div>
+        <v-row no-gutters justify="center">
+            <v-col cols="11" sm="11" md="9" lg="7">
+                <v-row no-gutters>
+                    <v-col cols="12" sm="6" class="pr-sm-3">
+                        <img
+                            src="@/assets/gallery/3.jpg"
+                            alt="fireplace"
+                            class="b-image image__fireplace"
+                        />
+                    </v-col>
 
-            <div style="flex: 0 0 50%; padding-left: 14px">
-                <img
-                    src="@/assets/gallery/4.jpg"
-                    alt="xachqar"
-                    style="width: 100%; height: 201px; object-fit: cover; margin-bottom: 28px; vertical-align: middle"
-                />
-                <img
-                    src="@/assets/gallery/5.jpg"
-                    alt="xachqar"
-                    style="width: 50%; height: 201px; object-fit: cover; vertical-align: middle; padding-right: 14px"
-                />
-                <img
-                    src="@/assets/gallery/6.jpg"
-                    alt="xachqar"
-                    style="width: 50%; height: 201px; object-fit: cover; vertical-align: middle; padding-left: 14px"
-                />
-            </div>
+                    <v-col cols="12" sm="6" class="pl-sm-3 mb-12">
+                        <img
+                            src="@/assets/gallery/4.jpg"
+                            alt="baby angel"
+                            class="b-image image__baby-angel my-7 mt-sm-0"
+                        />
 
-            <div style="flex: 0 0 50%; margin-top: 50px; padding-right: 14px">
-                <img
-                    src="@/assets/gallery/7.jpg"
-                    alt="xachqar"
-                    style="width: 100%; height: 320px; object-fit: cover; vertical-align: middle; margin-bottom: 28px"
-                />
-                <img
-                    src="@/assets/gallery/8.jpg"
-                    alt="xachqar"
-                    style="width: 100%; height: 260px; object-fit: cover; vertical-align: middle"
-                />
-            </div>
-            <div style="flex: 0 0 50%; margin-top: 50px; padding-left: 14px">
-                <img
-                    src="@/assets/gallery/9.jpg"
-                    alt="xachqar"
-                    style="width: 100%; height: 440px; object-fit: cover; vertical-align: middle; margin-bottom: 28px"
-                />
+                        <v-row no-gutters>
+                            <img
+                                src="@/assets/gallery/5.jpg"
+                                alt="lion"
+                                class="b-image image__lion pr-3"
+                            />
+                            <img
+                                src="@/assets/gallery/6.jpg"
+                                alt="angel"
+                                class="b-image image__angel pl-3"
+                            />
+                        </v-row>
+                    </v-col>
 
-                <img
-                    src="@/assets/gallery/10.jpg"
-                    alt="xachqar"
-                    style="width: 50%; height: 140px; object-fit: cover; vertical-align: middle; padding-right: 14px"
-                />
-                <img
-                    src="@/assets/gallery/11.jpg"
-                    alt="xachqar"
-                    style="width: 50%; height: 140px; object-fit: cover; vertical-align: middle; padding-left: 14px"
-                />
-            </div>
-        </div>
+                    <v-col cols="12" sm="6" class="pr-sm-3">
+                        <img
+                            src="@/assets/gallery/7.jpg"
+                            alt="cross stone"
+                            class="b-image image__cross-stone"
+                        />
+                        <img
+                            src="@/assets/gallery/8.jpg"
+                            alt="angel"
+                            class="b-image image__angel-2"
+                        />
+                    </v-col>
+
+                    <v-col cols="12" sm="6" class="pl-sm-3">
+                        <img
+                            src="@/assets/gallery/9.jpg"
+                            alt="angel"
+                            class="b-image image__angel-3 my-7 mt-sm-0"
+                        />
+
+                        <v-row no-gutters>
+                            <img
+                                src="@/assets/gallery/10.jpg"
+                                alt="angel"
+                                class="b-image image__angel-4 pr-3"
+                            />
+                            <img
+                                src="@/assets/gallery/11.jpg"
+                                alt="angel"
+                                class="b-image image__angel-5 pl-3"
+                            />
+                        </v-row>
+                    </v-col>
+                </v-row>
+            </v-col>
+        </v-row>
     </section>
 </template>
 
@@ -69,7 +79,7 @@ export default {
 </script>
 
 <style scoped>
-.gallery {
+.gallery-container {
     background-color: rgb(0, 0, 0);
     padding: 100px 0 130px;
 }
@@ -85,9 +95,53 @@ export default {
 }
 
 .images-container {
-    width: 55%;
+    max-width: 55%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+.image__fireplace {
+    width: 100%;
+    height: 430px;
+}
+
+.image__baby-angel {
+    width: 100%;
+    height: 201px;
+}
+
+.image__lion {
+    width: 50%;
+    height: 201px;
+}
+
+.image__angel {
+    width: 50%;
+    height: 201px;
+}
+
+.image__cross-stone {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 28px;
+}
+
+.image__angel-2 {
+    width: 100%;
+    height: 260px;
+}
+
+.image__angel-3 {
+    width: 100%;
+    height: 410px;
+}
+
+.image__angel-4 {
+    width: 50%;
+    height: 170px;
+}
+
+.image__angel-5 {
+    width: 50%;
+    height: 170px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="info-banner" :style="{ backgroundColor }">
+    <div class="info-banner" :style="{ minWidth, maxWidth, backgroundColor }">
         <div class="title-holder">
             <slot name="header"></slot>
         </div>
@@ -15,6 +15,14 @@ export default {
     name: "InfoBanner",
 
     props: {
+        minWidth: {
+            type: String,
+            default: "",
+        },
+        maxWidth: {
+            type: String,
+            default: "500px",
+        },
         backgroundColor: {
             type: String,
             default: "black",
@@ -29,7 +37,6 @@ export default {
 
 <style scoped>
 .info-banner {
-    max-width: 500px;
     color: white;
     text-align: center;
 }

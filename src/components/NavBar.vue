@@ -1,5 +1,8 @@
 <template>
-    <nav class="app-navbar" :class="$route.path === '/' ? 'pos-absolute' : ''">
+    <nav
+        class="app-navbar"
+        :class="$route.path === '/' ? 'pos-absolute' : 'black'"
+    >
         <v-row no-gutters justify="space-between" align="center">
             <v-col cols="auto">
                 <router-link to="/">
@@ -72,6 +75,10 @@ export default {
     padding: 22px 12px 22px 24px;
     width: 100%;
     z-index: 1000;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .header-logo {

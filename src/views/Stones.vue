@@ -1,16 +1,19 @@
 <template>
     <div>
-        <v-img
-            src="@/assets/angel.jpg"
-            width="100%"
-            height="auto"
-            max-height="100vh"
-        ></v-img>
+        <Quality />
+        <ChoosingStones />
+        <Assortment />
     </div>
 </template>
 
 <script>
+import Quality from "@/components/stones/Quality.vue";
+import ChoosingStones from "@/components/stones/ChoosingStones.vue";
+import Assortment from "@/components/stones/Assortment.vue";
+
 export default {
     name: "Stones",
+
+    components: { Quality, ChoosingStones, Assortment },
 };
 </script>

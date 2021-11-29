@@ -9,18 +9,19 @@
                 src="@/assets/mastery.jpg"
                 width="100%"
                 height="auto"
+                min-height="340"
                 max-height="85vh"
             ></v-img>
         </div>
 
-        <v-row no-gutters class="benefits-wrapper">
+        <v-row no-gutters class="pa-5">
             <v-col
                 v-for="benefit in benefits"
                 :key="benefit.title"
                 cols="12"
                 sm="6"
                 md="3"
-                class="text-center"
+                class="text-center py-5"
             >
                 <img
                     :src="benefit.icon"
@@ -77,12 +78,15 @@ export default {
 }
 
 .mastery-title-holder {
-    padding: 48px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1000;
 }
 
 .mastery-title {
-    font-size: 2rem;
+    font-size: 4.3vw !important;
     font-weight: 500;
     letter-spacing: 0.9rem;
     text-align: center;
@@ -95,15 +99,11 @@ export default {
     margin: auto;
 }
 
-.benefits-wrapper {
-    padding: 20px 24px 50px;
-}
-
 .benefit-image {
     width: 50px;
     height: 50px;
     vertical-align: middle;
-    margin: 30px 0;
+    margin: 0 0 30px;
 }
 
 .benefit-title {
@@ -127,10 +127,6 @@ export default {
 }
 
 @media screen and (min-width: 960px) {
-    .benefits-wrapper {
-        padding: 20px 0px 50px;
-    }
-
     .mastery-title-holder {
         padding: 0;
         position: absolute;
@@ -140,7 +136,6 @@ export default {
     }
 
     .mastery-title {
-        font-size: 4rem;
         font-weight: 500;
         letter-spacing: 0.9rem;
         text-align: center;
@@ -157,10 +152,6 @@ export default {
 }
 
 @media screen and (min-width: 1264px) {
-    .benefits-wrapper {
-        padding: 20px 75px 50px;
-    }
-
     .benefit-text {
         max-width: 50%;
     }

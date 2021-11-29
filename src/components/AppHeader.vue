@@ -4,6 +4,10 @@
 
         <div class="pos-relative black">
             <v-img
+                v-if="
+                    $route.path !== '/services' &&
+                        $route.path !== '/why-pick-us'
+                "
                 :src="mainImage"
                 width="100%"
                 height="auto"
@@ -142,8 +146,9 @@ export default {
 @media screen and (min-width: 1264px) {
     .banner-container {
         position: absolute;
-        top: 50%;
-        right: 150px;
+        /* top: 50%; */
+        right: 8%;
+        bottom: 3.8%;
         transform: translateY(-20%);
     }
 

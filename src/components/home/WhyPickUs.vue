@@ -2,17 +2,16 @@
     <section class="why-pick-us-container">
         <div class="pos-relative">
             <div class="title-holder">
-                <h1 class="main-title">ՄԵՆՔ</h1>
-                <h1 class="main-title">
-                    ՍՏԵՂԾՈՒՄ ԵՆՔ
-                </h1>
+                <h1 class="main-title">ՄԵՆՔ ՍՏԵՂԾՈՒՄ ԵՆՔ</h1>
+
                 <div class="underline"></div>
             </div>
 
             <v-img
-                src="@/assets/whyPickUs/12.jpg"
+                src="@/assets/home/whyPickUs/12.jpg"
                 width="100%"
                 height="auto"
+                min-height="340"
                 max-height="90vh"
             ></v-img>
         </div>
@@ -29,11 +28,14 @@
             />
         </div>
 
-        <img
-            src="@/assets/whyPickUs/19.jpg"
-            alt="half ready man statue"
-            class="image__bottom"
-        />
+        <v-img
+            src="@/assets/home/whyPickUs/19.jpg"
+            alt="half ready man status"
+            width="100%"
+            height="auto"
+            min-height="340"
+            max-height="70vh"
+        ></v-img>
 
         <div class="logo-container">
             <h1 class="logo-title">SOLID STONES</h1>
@@ -67,8 +69,8 @@ export default {
                     1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական
                     ստանդարտ տեքստ:
                 `,
-                mainImage: "assets/whyPickUs/13.jpg",
-                secondaryImage: "assets/whyPickUs/14.jpg",
+                mainImage: "assets/home/whyPickUs/13.jpg",
+                secondaryImage: "assets/home/whyPickUs/14.jpg",
             },
             {
                 title: "ՄԵՆՔ ՄՇԱԿՈՒՄ ԵՆՔ",
@@ -78,8 +80,8 @@ export default {
                     1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական
                     ստանդարտ տեքստ:
                 `,
-                mainImage: "assets/whyPickUs/15.jpg",
-                secondaryImage: "assets/whyPickUs/16.jpg",
+                mainImage: "assets/home/whyPickUs/15.jpg",
+                secondaryImage: "assets/home/whyPickUs/16.jpg",
             },
             {
                 title: "ՄԵՆՔ ԱՌԱՔՈՒՄ ԵՆՔ",
@@ -89,8 +91,8 @@ export default {
                     1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական
                     ստանդարտ տեքստ:
                 `,
-                mainImage: "assets/whyPickUs/17.jpg",
-                secondaryImage: "assets/whyPickUs/18.jpg",
+                mainImage: "assets/home/whyPickUs/17.jpg",
+                secondaryImage: "assets/home/whyPickUs/18.jpg",
             },
         ],
     }),
@@ -104,37 +106,30 @@ export default {
 }
 
 .title-holder {
-    text-align: center;
-    padding: 48px;
-    padding-top: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1000;
 }
 
 .main-title {
-    color: white;
     font-family: Braind Yerevan;
-    font-size: 2.2rem;
+    font-size: 4.3vw;
     font-weight: 500;
     letter-spacing: 12px;
+    text-align: center;
 }
 
 .underline {
     border-top: 3px solid white;
-    max-width: 95px;
+    width: 100px;
     margin: 10px auto 0;
-    transform: translateX(-6px);
 }
 
 .sections-container {
     background-color: rgb(0, 0, 0);
     padding: 130px 24px;
-}
-
-.image__bottom {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 70vh;
 }
 
 .logo-container {
@@ -174,12 +169,8 @@ export default {
 }
 
 @media screen and (min-width: 960px) {
-    .title-holder {
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        max-width: 320px;
-        padding: 0;
+    .underline {
+        border-top: 4px solid white;
     }
 
     .sections-container {
@@ -188,14 +179,6 @@ export default {
 }
 
 @media screen and (min-width: 1264px) {
-    .title-holder {
-        position: absolute;
-        top: 11%;
-        left: 9%;
-        max-width: 320px;
-        padding: 0;
-    }
-
     .sections-container {
         padding: 130px 80px;
     }

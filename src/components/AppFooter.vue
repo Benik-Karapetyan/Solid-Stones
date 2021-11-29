@@ -12,7 +12,6 @@
             :to="navLink.to"
             v-text="navLink.title"
             class="footer-link"
-            exact-active-class="footer-link--active"
             exact
         ></router-link>
     </footer>
@@ -48,10 +47,6 @@ export default {
     margin: 0 12px;
     font-family: DejaVu Sans;
     font-size: 0.9rem;
-}
-
-.footer-link--active {
-    font-weight: bold;
 }
 
 .footer-link:hover {

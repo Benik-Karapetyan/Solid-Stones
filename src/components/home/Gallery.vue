@@ -6,7 +6,7 @@
                 <v-row no-gutters>
                     <v-col cols="12" sm="6" class="pr-sm-3">
                         <img
-                            src="@/assets/gallery/3.jpg"
+                            src="@/assets/home/gallery/3.jpg"
                             alt="fireplace"
                             class="b-image image__fireplace"
                         />
@@ -14,19 +14,19 @@
 
                     <v-col cols="12" sm="6" class="pl-sm-3 mb-12">
                         <img
-                            src="@/assets/gallery/4.jpg"
+                            src="@/assets/home/gallery/4.jpg"
                             alt="baby angel"
                             class="b-image image__baby-angel my-7 mt-sm-0"
                         />
 
                         <v-row no-gutters>
                             <img
-                                src="@/assets/gallery/5.jpg"
+                                src="@/assets/home/gallery/5.jpg"
                                 alt="lion"
                                 class="b-image image__lion pr-3"
                             />
                             <img
-                                src="@/assets/gallery/6.jpg"
+                                src="@/assets/home/gallery/6.jpg"
                                 alt="angel"
                                 class="b-image image__angel pl-3"
                             />
@@ -35,12 +35,12 @@
 
                     <v-col cols="12" sm="6" class="pr-sm-3">
                         <img
-                            src="@/assets/gallery/7.jpg"
+                            src="@/assets/home/gallery/7.jpg"
                             alt="cross stone"
                             class="b-image image__cross-stone"
                         />
                         <img
-                            src="@/assets/gallery/8.jpg"
+                            src="@/assets/home/gallery/8.jpg"
                             alt="angel"
                             class="b-image image__angel-2"
                         />
@@ -48,19 +48,19 @@
 
                     <v-col cols="12" sm="6" class="pl-sm-3">
                         <img
-                            src="@/assets/gallery/9.jpg"
+                            src="@/assets/home/gallery/9.jpg"
                             alt="angel"
                             class="b-image image__angel-3 my-7 mt-sm-0"
                         />
 
                         <v-row no-gutters>
                             <img
-                                src="@/assets/gallery/10.jpg"
+                                src="@/assets/home/gallery/10.jpg"
                                 alt="angel"
                                 class="b-image image__angel-4 pr-3"
                             />
                             <img
-                                src="@/assets/gallery/11.jpg"
+                                src="@/assets/home/gallery/11.jpg"
                                 alt="angel"
                                 class="b-image image__angel-5 pl-3"
                             />

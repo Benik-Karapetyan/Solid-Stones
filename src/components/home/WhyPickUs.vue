@@ -10,7 +10,7 @@
             </div>
 
             <v-img
-                src="@/assets/whyPickUs/12.jpg"
+                src="@/assets/home/whyPickUs/12.jpg"
                 width="100%"
                 height="auto"
                 max-height="90vh"
@@ -30,7 +30,7 @@
         </div>
 
         <img
-            src="@/assets/whyPickUs/19.jpg"
+            src="@/assets/home/whyPickUs/19.jpg"
             alt="half ready man statue"
             class="image__bottom"
         />

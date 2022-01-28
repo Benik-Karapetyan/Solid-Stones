@@ -37,11 +37,6 @@
                             exact
                         >
                             {{ link.title }}
-                            <b-icon
-                                v-if="link.hasIcon"
-                                dark
-                                :text="icons.mdiChevronDown"
-                            ></b-icon>
                         </router-link>
                     </li>
                 </ul>
@@ -51,13 +46,13 @@
 </template>
 
 <script>
-import { mdiChevronDown, mdiChevronUp, mdiMenu } from "@mdi/js";
+import { mdiMenu } from "@mdi/js";
 
 export default {
     name: "NavBar",
 
     data: () => ({
-        icons: { mdiChevronDown, mdiChevronUp, mdiMenu },
+        icons: { mdiMenu },
         navLinks: [
             { title: "Գլխավոր", to: "/" },
             { title: "Ծառայություններ", to: "/services", hasIcon: true },

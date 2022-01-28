@@ -4,7 +4,10 @@
 
         <div class="pos-relative black">
             <v-img
-                v-if="$route.path !== '/services'"
+                v-if="
+                    $route.path !== '/services' &&
+                        $route.path !== '/why-pick-us'
+                "
                 :src="mainImage"
                 width="100%"
                 height="auto"

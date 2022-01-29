@@ -16,7 +16,7 @@
                     <v-img src="@/assets/whyPickUs/34.jpg" height="450"></v-img>
 
                     <div class="b-centered">
-                        <h2 class="font-weight-light mb-4">
+                        <h2 class="b-subtitle">
                             Ստեղծում ենք լավագույնը
                         </h2>
                         <div class="b-underline mx-auto"></div>
@@ -28,7 +28,7 @@
                     <v-img src="@/assets/whyPickUs/35.jpg" height="450"></v-img>
 
                     <div class="b-centered">
-                        <h2 class="font-weight-light mb-4">
+                        <h2 class="b-subtitle">
                             Հանձնում ենք ժամանակին
                         </h2>
                         <div class="b-underline mx-auto"></div>
@@ -156,56 +156,88 @@
 
                 <h1 class="best-choice-title">ԼԱՎԱԳՈՒՅՆ ԸՆՏՐՈՒԹՅՈՒՆԸ</h1>
 
-                <div style="padding: 0 155px">
-                    <p class="mb-12 text-center">
-                        Լորեմ Իպսումը տպագրական արդյունաբերության համար
-                        նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝
-                        Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության
-                        ստանդարտ մոդելային տեքստ: Լորեմ Իպսումը տպագրական
-                        արդյունաբերության համար նախատեսված մոդելային տեքստ է։
-                    </p>
+                <p class="mb-12 mx-auto text-center" style="max-width: 650px">
+                    Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված
+                    մոդելային տեքստ է։ Սկսած 1500-ականներից՝ Լորեմ Իպսումը
+                    հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային
+                    տեքստ: Լորեմ Իպսումը տպագրական արդյունաբերության համար
+                    նախատեսված մոդելային տեքստ է։
+                </p>
 
-                    <p class="text-center">
-                        Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է
-                        տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ:
-                        Լորեմ Իպսումը տպագրական արդյունաբերության համար
-                        նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝
-                        Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության
-                        ստանդարտ մոդելային տեքստ:
-                    </p>
-                </div>
+                <p class="text-center mx-auto" style="max-width: 650px">
+                    Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական
+                    արդյունաբերության ստանդարտ մոդելային տեքստ: Լորեմ Իպսումը
+                    տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ
+                    է։ Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է
+                    տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ:
+                </p>
             </v-col>
             <v-col cols="6">
                 <v-img src="@/assets/whyPickUs/38.jpg" height="100%"></v-img>
             </v-col>
+        </v-row>
 
-            <v-col cols="12" style="padding: 120px 155px">
-                <v-row no-gutters>
-                    <v-col cols="6" class="pos-relative">
-                        <v-img
-                            src="@/assets/whyPickUs/39.jpg"
-                            width="442"
-                            height="642"
-                        ></v-img>
+        <v-row no-gutters class="white black--text" style="padding: 120px 0">
+            <v-col cols="6" class="pos-relative">
+                <v-img
+                    src="@/assets/whyPickUs/39.jpg"
+                    width="442"
+                    height="642"
+                ></v-img>
 
-                        <v-img
-                            src="@/assets/whyPickUs/40.jpg"
-                            width="416"
-                            height="316"
-                            class="transformed-left"
-                        ></v-img>
-                    </v-col>
+                <v-img
+                    src="@/assets/whyPickUs/40.jpg"
+                    width="416"
+                    height="316"
+                    class="transformed-left"
+                ></v-img>
+            </v-col>
+
+            <v-col cols="6">
+                <v-row
+                    no-gutters
+                    justify="center"
+                    align="center"
+                    class="fill-height"
+                >
+                    <v-sheet width="613">
+                        <h1 class="always-impressive-title">Միշտ տպավորիչ</h1>
+
+                        <p>
+                            Լորեմ Իպսումը տպագրական արդյունաբերության համար
+                            նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝
+                            Լորեմ Իպսումը հանդիսացել է տպագրական
+                            արդյունաբերության ստանդարտ մոդելային տեքստ: Լորեմ
+                            Իպսումը տպագրական արդյունաբերության համար նախատեսված
+                            մոդելային տեքստ է։
+                        </p>
+                    </v-sheet>
                 </v-row>
             </v-col>
         </v-row>
+
+        <div class="py-10">
+            <Benefits color="black" />
+        </div>
+
+        <v-img
+            src="@/assets/whyPickUs/41.jpg"
+            width="100%"
+            height="auto"
+            min-height="340"
+            max-height="85vh"
+        ></v-img>
     </div>
 </template>
 
 <script>
 import { mdiPlay } from "@mdi/js";
+import Benefits from "@/components/general/Benefits.vue";
 
 export default {
     name: "WhyPickUs",
+
+    components: { Benefits },
 
     data: () => ({
         icons: { mdiPlay },
@@ -224,6 +256,12 @@ export default {
     font-size: 3rem;
     font-weight: 500;
     letter-spacing: 12px;
+}
+
+.b-subtitle {
+    font-weight: 300;
+    white-space: nowrap;
+    margin-bottom: 16px;
 }
 
 .b-centered {
@@ -285,5 +323,14 @@ export default {
     position: absolute;
     left: 320px;
     bottom: 120px;
+}
+
+.always-impressive-title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 7px;
+    white-space: nowrap;
+    margin-bottom: 32px;
+    text-transform: uppercase;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <About />
-        <Benefits />
+        <BenefitsSection />
         <Gallery />
         <WhyPickUs />
     </div>
@@ -11,7 +11,7 @@
 import { mdiHome } from "@mdi/js";
 
 import About from "@/components/home/About.vue";
-import Benefits from "@/components/home/Benefits.vue";
+import BenefitsSection from "@/components/home/BenefitsSection.vue";
 import Gallery from "@/components/home/Gallery.vue";
 import WhyPickUs from "@/components/home/WhyPickUs.vue";
 
@@ -20,7 +20,7 @@ export default {
 
     components: {
         About,
-        Benefits,
+        BenefitsSection,
         Gallery,
         WhyPickUs,
     },

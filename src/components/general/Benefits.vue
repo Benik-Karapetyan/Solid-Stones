@@ -1,38 +1,22 @@
 <template>
-    <section class="benefits-container">
-        <div class="pos-relative">
-            <div class="mastery-title-holder">
-                <h1 class="mastery-title">CREATE FROM NOTHING</h1>
-                <div class="underline"></div>
-            </div>
-            <v-img
-                src="@/assets/mastery.jpg"
-                width="100%"
-                height="auto"
-                min-height="340"
-                max-height="85vh"
-            ></v-img>
-        </div>
-
-        <v-row no-gutters class="pa-5">
-            <v-col
-                v-for="benefit in benefits"
-                :key="benefit.title"
-                cols="12"
-                sm="6"
-                md="3"
-                class="text-center py-5"
-            >
-                <img
-                    :src="benefit.icon"
-                    alt="benefit icon"
-                    class="benefit-image"
-                />
-                <h3 class="benefit-title" v-text="benefit.title"></h3>
-                <p class="benefit-text" v-text="benefit.text"></p>
-            </v-col>
-        </v-row>
-    </section>
+    <v-row
+        no-gutters
+        class="pa-5 white--text"
+        :style="{ backgroundColor: color }"
+    >
+        <v-col
+            v-for="benefit in benefits"
+            :key="benefit.title"
+            cols="12"
+            sm="6"
+            md="3"
+            class="text-center py-5"
+        >
+            <img :src="benefit.icon" alt="benefit icon" class="benefit-image" />
+            <h3 class="benefit-title" v-text="benefit.title"></h3>
+            <p class="benefit-text" v-text="benefit.text"></p>
+        </v-col>
+    </v-row>
 </template>
 
 <script>
@@ -43,6 +27,10 @@ import thousandCustomers from "@/assets/icons/1000-customers.png";
 
 export default {
     name: "Benefits",
+
+    props: {
+        color: String,
+    },
 
     data: () => ({
         benefits: [
@@ -72,33 +60,6 @@ export default {
 </script>
 
 <style scoped>
-.benefits-container {
-    background-color: rgb(30, 30, 30);
-    color: white;
-}
-
-.mastery-title-holder {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-}
-
-.mastery-title {
-    font-size: 4.3vw !important;
-    font-weight: 500;
-    letter-spacing: 0.9rem;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.underline {
-    border-top: 3px solid white;
-    width: 100px;
-    margin: auto;
-}
-
 .benefit-image {
     width: 50px;
     height: 50px;
@@ -127,25 +88,6 @@ export default {
 }
 
 @media screen and (min-width: 960px) {
-    .mastery-title-holder {
-        padding: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .mastery-title {
-        font-weight: 500;
-        letter-spacing: 0.9rem;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .underline {
-        border-top: 4px solid white;
-    }
-
     .benefit-text {
         max-width: 60%;
     }

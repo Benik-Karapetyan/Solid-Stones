@@ -1,6 +1,8 @@
 <template>
     <section class="why-pick-us-container">
         <div class="pos-relative">
+            <div class="b-overlay"></div>
+
             <div class="title-holder">
                 <h1 class="main-title">ՄԵՆՔ ՍՏԵՂԾՈՒՄ ԵՆՔ</h1>
 
@@ -104,6 +106,16 @@ export default {
     background-color: black;
     color: white;
 }
+/* @TODO - fix overlays height */
+.b-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.25);
+}
 
 .title-holder {
     width: 100%;
@@ -129,7 +141,7 @@ export default {
 
 .sections-container {
     background-color: rgb(0, 0, 0);
-    padding: 130px 24px;
+    padding: 130px 24px 50px;
 }
 
 .logo-container {
@@ -174,19 +186,19 @@ export default {
     }
 
     .sections-container {
-        padding: 130px 50px;
+        padding: 130px 50px 50px;
     }
 }
 
 @media screen and (min-width: 1264px) {
     .sections-container {
-        padding: 130px 80px;
+        padding: 130px 80px 50px;
     }
 }
 
 @media screen and (min-width: 1400px) {
     .sections-container {
-        padding: 130px 150px;
+        padding: 130px 150px 50px;
     }
 }
 </style>

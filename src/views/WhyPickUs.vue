@@ -198,7 +198,7 @@
                     no-gutters
                     justify="center"
                     align="center"
-                    class="fill-height"
+                    style="height: 100%"
                 >
                     <v-sheet width="613">
                         <h1 class="always-impressive-title">Միշտ տպավորիչ</h1>
@@ -259,7 +259,9 @@ export default {
 }
 
 .b-subtitle {
-    font-weight: 300;
+    font-family: Braind Yerevan;
+    font-weight: 400;
+    letter-spacing: 4px;
     white-space: nowrap;
     margin-bottom: 16px;
 }

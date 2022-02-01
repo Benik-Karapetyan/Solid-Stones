@@ -38,16 +38,17 @@ export default {
 }
 
 .mastery-title {
-    font-size: 4.3vw !important;
+    font-size: 3.6vw !important;
     font-weight: 500;
-    letter-spacing: 0.9rem;
+    letter-spacing: 1vw;
     text-align: center;
+    padding: 0 30px;
     margin-bottom: 10px;
 }
 
 .underline {
     border-top: 3px solid white;
-    width: 100px;
+    width: 75px;
     margin: auto;
 }
 
@@ -68,6 +69,7 @@ export default {
     }
 
     .underline {
+        width: 100px;
         border-top: 4px solid white;
     }
 }

@@ -1,5 +1,11 @@
 <template>
-    <v-row no-gutters justify="space-between" align="center" class="mb-12">
+    <v-row
+        no-gutters
+        justify="space-between"
+        justify-xl="space-around"
+        align="center"
+        class="mb-20"
+    >
         <v-col order="1" :order-md="reversed ? 2 : 1" cols="12" md="auto">
             <div class="pos-relative">
                 <img
@@ -50,16 +56,17 @@ export default {
 <style scoped>
 .image__main {
     display: block;
-    width: 100%;
+    width: 340px;
     max-width: 350px;
-    height: 460px;
+    height: 442px;
     margin: auto;
 }
 
 .image__secondary {
     display: none;
-    width: 320px;
+    width: 300px;
     height: 220px;
+    object-fit: cover;
 }
 
 .transformed-left {
@@ -100,6 +107,10 @@ export default {
     font-size: 15px;
     letter-spacing: 2px;
     padding: 10px 40px;
+}
+
+.mb-20 {
+    margin-bottom: 80px !important;
 }
 
 @media screen and (min-width: 1200px) {

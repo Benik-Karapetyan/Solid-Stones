@@ -1,7 +1,7 @@
 <template>
     <div style="padding: 130px">
         <p
-            style="max-width: 1000px; margin-bottom: 110px"
+            style="max-width: 800px; margin-bottom: 110px; font-size: 20px; font-weight: 300; line-height: 36px"
             class="text-center mx-auto"
         >
             {{ item.text }}

@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 .about-container {
-    /* padding: 48px 24px; */
     padding: 54px 40px;
 }
 
@@ -42,14 +41,12 @@ export default {
 
 @media screen and (min-width: 600px) {
     .about-container {
-        /* padding: 48px; */
         padding: 100px;
     }
 }
 
 @media screen and (min-width: 960px) {
     .about-container {
-        /* padding: 100px; */
         padding: 120px 100px;
     }
 

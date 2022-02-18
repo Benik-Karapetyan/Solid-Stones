@@ -7,8 +7,6 @@
             </div>
             <v-img
                 src="@/assets/mastery.jpg"
-                width="100%"
-                height="auto"
                 min-height="340"
                 max-height="85vh"
             ></v-img>

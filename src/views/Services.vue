@@ -21,25 +21,29 @@
         </div>
 
         <div class="pos-relative">
-            <v-img src="@/assets/services/42.jpg" height="100vh"></v-img>
+            <v-img
+                src="@/assets/services/42.jpg"
+                min-height="340"
+                max-height="85vh"
+            ></v-img>
 
             <div class="cross-stone-holder">
                 <v-img
                     src="@/assets/logo-icon.png"
-                    width="130"
+                    width="120"
                     height="auto"
                     class="mx-auto mb-5"
                 ></v-img>
 
                 <h1 class="cross-stone-title">ԽԱՉՔԱՐ</h1>
 
-                <span class="cross-stone-subtitle">Մտածիր</span>
+                <v-row no-gutters class="cross-stone-subtitle">
+                    <v-col cols="12" sm="auto">Մտածիր</v-col>
 
-                <span class="cross-stone-subtitle" style="margin: 0 124px"
-                    >Ստեղծիր</span
-                >
+                    <v-col cols="12" sm="auto">Ստեղծիր</v-col>
 
-                <span class="cross-stone-subtitle">Արժևորիր</span>
+                    <v-col cols="12" sm="auto">Արժևորիր</v-col>
+                </v-row>
             </div>
         </div>
 
@@ -318,50 +322,73 @@ export default {
 }
 
 .b-main-title {
+    width: 100%;
     font-family: Braind Yerevan;
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 500;
     letter-spacing: 2.5px;
+    text-align: center;
 }
 
 .b-centered {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 .b-info-holder {
     background-color: white;
     color: black;
-    padding: 145px 0;
+    padding: 40px 0;
 }
 
 .b-info-text {
     margin: auto;
+    padding: 0 40px;
     max-width: 740px;
     line-height: 36px;
     text-align: center;
 }
 
+.cross-stone-holder {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 69px;
+}
+
 .cross-stone-title {
     font-family: Braind Yerevan;
-    font-size: 4.5rem;
+    font-size: 4rem;
     letter-spacing: 12px;
     font-weight: normal;
     margin-bottom: 50px;
 }
 
 .cross-stone-subtitle {
+    margin: auto;
+    max-width: 840px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
     font-size: 1.6rem;
     letter-spacing: 8px;
 }
 
-.cross-stone-holder {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding-bottom: 69px;
+@media screen and (min-width: 600px) {
+    .b-info-holder {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .b-info-holder {
+        padding: 120px 0;
+    }
+
+    .b-info-text {
+        padding: 0;
+    }
 }
 </style>

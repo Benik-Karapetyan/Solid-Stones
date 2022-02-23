@@ -1,11 +1,11 @@
 <template>
     <section>
-        <v-row no-gutters>
-            <v-col cols="6">
+        <v-row no-gutters class="black">
+            <v-col order="2" order-md="1" cols="12" md="6">
                 <b-info-banner
                     max-width="100%"
                     background-color="#1C191A"
-                    style="padding: 80px 160px"
+                    class="b-text-container"
                 >
                     <template v-slot:header>
                         <v-img
@@ -18,7 +18,7 @@
                         ՔԱՐԵՐԻ ԸՆՏՐՈՒԹՅՈՒՆԸ
                     </template>
 
-                    <p>
+                    <p class="mx-auto" style="max-width: 440px">
                         Լորեմ Իպսումը տպագրական արդյունաբերության համար
                         նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝
                         Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության
@@ -26,7 +26,7 @@
                         արդյունաբերության համար նախատեսված մոդելային տեքստ է։
                     </p>
 
-                    <p class="ma-0">
+                    <p class="mx-auto mb-0" style="max-width: 440px">
                         Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է
                         տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ:
                         Լորեմ Իպսումը տպագրական արդյունաբերության համար
@@ -36,12 +36,8 @@
                     </p>
                 </b-info-banner>
             </v-col>
-            <v-col cols="6">
-                <v-img
-                    src="@/assets/stones/26.jpg"
-                    width="100%"
-                    height="100%"
-                ></v-img>
+            <v-col order="1" order-md="2" cols="12" md="6">
+                <v-img src="@/assets/stones/26.jpg" class="b-image"></v-img>
             </v-col>
         </v-row>
     </section>
@@ -52,3 +48,30 @@ export default {
     name: "Assortment",
 };
 </script>
+
+<style scoped>
+.b-text-container {
+    padding: 80px 20px;
+    width: 100%;
+    max-width: 483px !important;
+    margin: auto;
+}
+
+.b-image {
+    width: 100%;
+    max-width: 483px;
+    height: 483px;
+    margin: auto;
+}
+
+@media screen and (min-width: 960px) {
+    .b-image {
+        max-width: none;
+        height: 100%;
+    }
+
+    .b-text-container {
+        max-width: 100% !important;
+    }
+}
+</style>

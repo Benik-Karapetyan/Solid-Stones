@@ -1,7 +1,14 @@
 <template>
     <section class="assortment-container">
-        <v-row no-gutters justify="space-between">
-            <v-col v-for="stone in stones" :key="stone.title" cols="5">
+        <v-row no-gutters justify="center" justify-md="space-around">
+            <v-col
+                v-for="stone in stones"
+                :key="stone.title"
+                cols="12"
+                md="6"
+                lg="5"
+                class="px-0 px-sm-5"
+            >
                 <v-img
                     :src="stone.image"
                     width="380"
@@ -11,7 +18,7 @@
 
                 <b-info-banner
                     background-color="#1C191A"
-                    class="pa-10"
+                    class="pa-10 mx-auto"
                     style="margin-bottom: 140px"
                 >
                     <template v-slot:header>
@@ -94,7 +101,7 @@ export default {
 <style scoped>
 .assortment-container {
     background-color: black;
-    padding: 140px 180px;
+    padding: 140px 0;
     padding-bottom: 0;
 }
 </style>

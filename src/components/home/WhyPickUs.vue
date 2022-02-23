@@ -1,7 +1,7 @@
 <template>
     <section class="why-pick-us-container">
         <div class="pos-relative">
-            <div class="b-overlay"></div>
+            <b-overlay></b-overlay>
 
             <div class="title-holder">
                 <h1 class="main-title">ՄԵՆՔ ՍՏԵՂԾՈՒՄ ԵՆՔ</h1>
@@ -105,16 +105,6 @@ export default {
 .why-pick-us-container {
     background-color: black;
     color: white;
-}
-/* @TODO - fix overlays height */
-.b-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 77vh;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.25);
 }
 
 .title-holder {

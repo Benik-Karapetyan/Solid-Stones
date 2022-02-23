@@ -5,6 +5,8 @@
             :key="i"
             class="pos-relative mb-6"
         >
+            <b-overlay></b-overlay>
+
             <v-img :src="section.img" width="100%" height="215"></v-img>
 
             <div class="b-main-title b-centered">
@@ -20,105 +22,19 @@
             </p>
         </div>
 
-        <div class="pos-relative">
-            <v-img
-                src="@/assets/services/42.jpg"
-                min-height="340"
-                max-height="85vh"
-            ></v-img>
-
-            <div class="cross-stone-holder">
-                <v-img
-                    src="@/assets/logo-icon.png"
-                    width="120"
-                    height="auto"
-                    class="mx-auto mb-5"
-                ></v-img>
-
-                <h1 class="cross-stone-title">ԽԱՉՔԱՐ</h1>
-
-                <v-row no-gutters class="cross-stone-subtitle">
-                    <v-col cols="12" sm="auto">Մտածիր</v-col>
-
-                    <v-col cols="12" sm="auto">Ստեղծիր</v-col>
-
-                    <v-col cols="12" sm="auto">Արժևորիր</v-col>
-                </v-row>
-            </div>
-        </div>
+        <CrossStoneSection />
 
         <ServiceSection :item="sectionOne" />
 
-        <div class="pos-relative">
-            <v-img src="@/assets/services/47.jpg" height="100vh"></v-img>
-
-            <div class="cross-stone-holder">
-                <v-img
-                    src="@/assets/logo-icon.png"
-                    width="130"
-                    height="auto"
-                    class="mx-auto mb-10"
-                ></v-img>
-
-                <h1 class="cross-stone-title">ԶԱՐԴԱՔԱՆԴԱԿ</h1>
-
-                <span class="cross-stone-subtitle">Գեղեցիկը</span>
-
-                <span class="cross-stone-subtitle mx-12">շինության</span>
-
-                <span class="cross-stone-subtitle">մեջ</span>
-            </div>
-        </div>
+        <OrnamentSection />
 
         <ServiceSection :item="sectionTwo" />
 
-        <div class="pos-relative">
-            <v-img src="@/assets/services/52.jpg" height="100vh"></v-img>
-
-            <div class="cross-stone-holder">
-                <v-img
-                    src="@/assets/logo-icon.png"
-                    width="130"
-                    height="auto"
-                    class="mx-auto mb-10"
-                ></v-img>
-
-                <h1 class="cross-stone-title">ԱՐՁԱՆ/ԿԻՍԱՆԴՐԻ/ՀՐԵՇՏԱԿ</h1>
-
-                <span class="cross-stone-subtitle">Ստեղծիր</span>
-
-                <span class="cross-stone-subtitle mx-12">հիմա,</span>
-
-                <span class="cross-stone-subtitle mr-12">մնա</span>
-
-                <span class="cross-stone-subtitle">հավերժ</span>
-            </div>
-        </div>
+        <AngelSection />
 
         <ServiceSection :item="sectionThree" />
 
-        <div class="pos-relative">
-            <v-img src="@/assets/services/57.jpg" height="100vh"></v-img>
-
-            <div class="cross-stone-holder">
-                <v-img
-                    src="@/assets/logo-icon.png"
-                    width="130"
-                    height="auto"
-                    class="mx-auto mb-10"
-                ></v-img>
-
-                <h1 class="cross-stone-title">ԿԱՌՈՒՑԱՊԱՏՄԱՆ ԱՇԽԱՏԱՆՔՆԵՐ</h1>
-
-                <span class="cross-stone-subtitle">Ամուր</span>
-
-                <span class="cross-stone-subtitle mx-12">հիմք.</span>
-
-                <span class="cross-stone-subtitle mr-12">Ամուր</span>
-
-                <span class="cross-stone-subtitle">սկիզբ</span>
-            </div>
-        </div>
+        <ConstructionSection />
 
         <ServiceSection :item="sectionFour" />
     </div>
@@ -147,11 +63,21 @@ import image19 from "@/assets/services/60.jpg";
 import image20 from "@/assets/services/61.jpg";
 
 import ServiceSection from "@/components/services/ServiceSection.vue";
+import CrossStoneSection from "@/components/services/CrossStoneSection.vue";
+import OrnamentSection from "@/components/services/OrnamentSection.vue";
+import AngelSection from "@/components/services/AngelSection.vue";
+import ConstructionSection from "@/components/services/ConstructionSection.vue";
 
 export default {
     name: "Services",
 
-    components: { ServiceSection },
+    components: {
+        ServiceSection,
+        CrossStoneSection,
+        OrnamentSection,
+        AngelSection,
+        ConstructionSection,
+    },
 
     data: () => ({
         sections: [
@@ -328,6 +254,7 @@ export default {
     font-weight: 500;
     letter-spacing: 2.5px;
     text-align: center;
+    z-index: 1;
 }
 
 .b-centered {
@@ -348,32 +275,6 @@ export default {
     max-width: 740px;
     line-height: 36px;
     text-align: center;
-}
-
-.cross-stone-holder {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 69px;
-}
-
-.cross-stone-title {
-    font-family: Braind Yerevan;
-    font-size: 4rem;
-    letter-spacing: 12px;
-    font-weight: normal;
-    margin-bottom: 50px;
-}
-
-.cross-stone-subtitle {
-    margin: auto;
-    max-width: 840px;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.6rem;
-    letter-spacing: 8px;
 }
 
 @media screen and (min-width: 600px) {

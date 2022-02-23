@@ -1,8 +1,7 @@
 <template>
     <section class="quality-container">
         <div class="content">
-            <v-img src="@/assets/stones/25.jpg" width="550" height="550">
-            </v-img>
+            <v-img src="@/assets/stones/25.jpg" class="b-image"> </v-img>
 
             <div class="banner-container">
                 <b-info-banner
@@ -33,7 +32,7 @@ export default {
 <style scoped>
 .quality-container {
     background-color: black;
-    padding-bottom: 240px;
+    padding-bottom: 400px;
 }
 
 .content {
@@ -42,10 +41,35 @@ export default {
     position: relative;
 }
 
+.b-image {
+    width: 550px;
+    height: 483px;
+}
+
 .banner-container {
+    min-width: 380px;
+    max-width: 380px;
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+    .quality-container {
+        padding-bottom: 240px;
+    }
+
+    .b-image {
+        height: 550px;
+    }
+
+    .banner-container {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: auto;
+        transform: translateY(-50%);
+    }
 }
 </style>

@@ -1,9 +1,6 @@
 <template>
-    <div style="padding: 130px">
-        <p
-            style="max-width: 800px; margin-bottom: 110px; font-size: 20px; font-weight: 300; line-height: 36px"
-            class="text-center mx-auto"
-        >
+    <div class="b-container">
+        <p class="b-main-text">
             {{ item.text }}
         </p>
 
@@ -15,11 +12,16 @@
             style="margin-bottom: 140px"
         ></v-img>
 
-        <v-row no-gutters>
-            <v-col v-for="(item, i) in item.items" :key="i" cols="4">
+        <v-row no-gutters justify="space-around" justify-lg="center">
+            <v-col
+                v-for="(item, i) in item.items"
+                :key="i"
+                cols="4"
+                class="b-item"
+            >
                 <v-img
                     :src="item.image"
-                    max-width="348"
+                    width="100%"
                     height="506"
                     class="rounded-pill"
                     style="margin-bottom: 80px"
@@ -27,7 +29,7 @@
 
                 <h2 class="mb-6" v-text="item.title"></h2>
 
-                <p style="max-width: 348px" v-html="item.text"></p>
+                <p v-html="item.text"></p>
             </v-col>
         </v-row>
     </div>
@@ -40,3 +42,35 @@ export default {
     props: { item: Object },
 };
 </script>
+
+<style scoped>
+.b-container {
+    padding: 130px 0 0;
+}
+
+.b-main-text {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 110px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: center;
+}
+
+.b-item {
+    min-width: 350px;
+    max-width: 350px;
+    margin: 0 32px 130px;
+}
+
+@media screen and (min-width: 1264px) {
+    .b-container {
+        padding-bottom: 130px;
+    }
+
+    .b-item {
+        margin-bottom: 0;
+    }
+}
+</style>

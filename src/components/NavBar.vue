@@ -42,17 +42,44 @@
                 </ul>
             </v-col>
         </v-row>
+
+        <v-navigation-drawer
+            v-model="drawer"
+            color="black"
+            width="400"
+            app
+            temporary
+            right
+            dark
+        >
+            <v-toolbar color="black" height="97.23">
+                <v-btn large icon @click="drawer = false">
+                    <v-icon size="28" v-text="icons.mdiClose"></v-icon>
+                </v-btn>
+            </v-toolbar>
+
+            <v-list subheader>
+                <v-list-item
+                    v-for="link in navLinks"
+                    :key="link.title"
+                    :to="link.to"
+                >
+                    <v-list-item-title v-text="link.title"></v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
     </nav>
 </template>
 
 <script>
-import { mdiMenu } from "@mdi/js";
+import { mdiMenu, mdiClose } from "@mdi/js";
 
 export default {
     name: "NavBar",
 
     data: () => ({
-        icons: { mdiMenu },
+        icons: { mdiMenu, mdiClose },
+        drawer: false,
         navLinks: [
             { title: "Գլխավոր", to: "/" },
             { title: "Ծառայություններ", to: "/services", hasIcon: true },
@@ -61,6 +88,12 @@ export default {
             { title: "Մեր Մասին", to: "/about" },
         ],
     }),
+
+    watch: {
+        ["$vuetify.breakpoint.mdAndUp"](val) {
+            if (val) this.drawer = false;
+        },
+    },
 };
 </script>
 
@@ -70,10 +103,6 @@ export default {
     padding: 22px 12px 22px 24px;
     width: 100%;
     z-index: 1000;
-}
-
-.black {
-    background-color: rgba(0, 0, 0, 1);
 }
 
 .header-logo {

@@ -146,7 +146,6 @@ export default {
 @media screen and (min-width: 1264px) {
     .banner-container {
         position: absolute;
-        /* top: 50%; */
         right: 8%;
         bottom: 3.8%;
         transform: translateY(-20%);
